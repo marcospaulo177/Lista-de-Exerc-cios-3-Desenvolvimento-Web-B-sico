@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Envie seu Feedback</h1>
+    </header>
+
+    <main>
+      <form action="#" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="endereco">Endereço Completo</label>
+        <input type="text" id="endereco" name="endereco" />
+
+        <label for="tipo-feedback">Tipo de feedback</label>
+        <select id="tipo-feedback" name="tipo-feedback" required>
+          <option value="" disabled selected>Escolha uma opção</option>
+          <option value="elogio">Elogio</option>
+          <option value="critica">Crítica</option>
+          <option value="sugestao">Sugestão</option>
+        </select>
+
+        <label for="mensagem">Feedback</label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          placeholder="Escreva seu feedback aqui..."
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Rafaela Góes. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
